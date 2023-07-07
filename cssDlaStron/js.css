@@ -1,0 +1,143 @@
+/*CZCIONKI
+	font-family: 'Patrick Hand', cursive;
+	font-family: 'Tomorrow', sans-serif;
+	font-family: 'Balsamiq Sans', cursive;
+	font-family: 'Itim', cursive;
+	font-family: 'Noto Sans JP', sans-serif;
+	font-family: 'Roboto', sans-serif;
+*/
+
+body{
+	background-color:#6b6f78;
+	text-align:justify;
+}
+
+#EVERY{
+	padding:20px 28px;
+}
+#content{
+	
+}
+
+/*CONTET*/
+#con1{
+	width:78%;
+	background-color:#333;
+	float:left;
+	margin-right:38px;
+	border-bottom:15x solid #1a1a1a;
+	border-right:15x solid #1a1a1a;
+	border-top:15x solid #d4d4d;
+	border-left:15x solid #d4d4d;
+}
+/*CONTET*/
+
+
+
+/*Lista po prawej*/
+#con2{
+	width:19%;
+	height:780px;
+	background-color:#2d3339;
+	float:left;
+	position:sticky;
+	top:65px;
+	font-size:18px;
+	padding-top:0px;
+	border-bottom:15x solid #434d56;
+	border-right:15x solid #434d56;
+	border-top:15x solid #a9b3bc;
+	border-left:15x solid #a9b3bc;
+}
+
+/*Lista po prawej*/
+
+
+
+
+
+
+
+
+
+/*WSTEP*/
+	.wstepText{
+		width:80%;
+		float:left;
+		padding-right:20px;
+		padding-left:10px;
+		font-size:30px;
+	}
+	#calyWstep{
+		width:700px;
+		height:250px;
+		margin:0;
+		display: inline-block;
+		text-align: justify;
+		font-family: 'Itim';
+	}
+	/*Wstep^*/
+
+/*DZIELNIK*/
+#script2{
+	border-top:2px dashed #424857; 
+	border-bottom:2px dashed #424857;
+	font-size:72px;
+	text-align:center;
+	letter-spacing:-4px;
+	font-family: 'Tomorrow', sans-serif;
+	padding-bottom:10px;
+}
+/*DZIELNIK^*/
+
+/*Caly Tutorial*/
+#calyTutorial{
+	font-size:30px;
+	width:100%;
+}
+.T1{
+	text-align:left;
+	padding-left:60px;
+	line-height:50px;
+}
+.przyklad{
+	border:3px dotted #1a1a1a;
+	padding:10px;
+	background-color:#666666;
+	color:#ccf;
+	font-family: 'Roboto', sans-serif;
+	margin-left:50px;
+	font-size:35px;
+	line-height:50px;
+	text-align:left;
+	letter-spacing:-2px;
+}
+.jsliczy{
+	text-align:justify;
+	width:350px;
+	height:150px;
+}
+.zmienneLV{
+	float:left;
+	padding:45px;
+}
+.zdjZmienne{
+	border-left:5px solid #424757; 
+	border-top:5px solid #424757;
+	border-bottom:5px solid #21242c;
+	border-right:5px solid #21242c;
+	z-index:100;
+	transition:all 0.5s ease-in-out;
+}
+.zdjZmienne:hover{
+	transform:scale(1.5);
+}
+
+
+/*Caly Tutorial^*/
+
+
+
+
+
+

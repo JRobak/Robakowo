@@ -1,0 +1,997 @@
+<!-Narazie zalecane wymiary to: 1600/900->
+
+<!DOCTYPE HTML>
+<html lang="pl">
+
+  <head>
+
+     <meta charset="utf-8">
+     <title>Robakowo - JavaScript</title>
+	 <link rel="Shortcut icon" href="zdj/Rnalogo.png" />
+
+     <meta name="description" content="Moja strona intenetowa">
+     <meta name="keywords" content="">
+     <meta name="autor" content="programadoraORArobakolamazakola">
+     <meta http-equiv="X-Ua-Compatible" content="IE=edge,chrome=1">
+	 
+	 <!--CZCIONKI-->
+	 
+	 <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Itim&family=Noto+Sans+JP:wght@700&display=swap" rel="stylesheet">
+	 <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Tomorrow:wght@500&display=swap" rel="stylesheet">
+	 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+	 
+	 <!--CZCIONKI^-->
+	 
+	 
+	 <link rel="stylesheet" href="cssDlaStron/dificult.css" type="text/css">
+	 <link rel="stylesheet" href="cssDlaStron/js.css" type="text/css">
+	 <link rel="stylesheet" href="css/fontello.css" type="text/css">	
+	 
+     <script src="zegar.js"></script>
+     <script src="data.js"></script>
+  </head>
+  <body onload="zegarek(), data()" background="zdj/tlo1.png">
+  
+		<div id="zGh">
+			<center><img src="zdj/worm2.png" style="width:170px; height:117px;"><span style="color:#570505;">Robak</span>owo</center>
+			
+			<div id="zegar" ></div>
+			<div id="data" ></div>
+		</div>
+		<div id="menu">
+				<ol>
+					<li><a href="stronaglowna.html">Strona główna</a></li>
+					<li><a href="#">Programowanie</a>
+						<ul>
+							<li><a href="HTMLiCSS.html">HTML / CSS</a></li>
+							<li><a href="js.html">JavaScript</a></li>
+							<li><a href="php.html">PHP</a></li>
+							<li><a href="Java.html">Java</a></li>
+							<li><a href="ciplasplas.html">C++</a></li>
+							<li><a href="phyton.html">Phyton</a></li>
+							<li><a href="Sl.html">System liczbowy</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Zdjęcia</a>
+						<ul>
+							<li><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Roślinki</a>
+						<ul>
+							<li><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Inne</a>
+						<ul>
+							<li><a href="#">Animacje</a></li>
+							<li><a href="#">Gry</a></li>
+							<li><a href="#">Kalkulator</a></li>
+							<li><a href="#">CPS TEST</a></li>
+							<li><a href="genezaRobaka.html">Geneza Robaka</a></li>
+						</ul>
+					</li>
+				</ol>	
+		</div>
+<div id="EVERY">
+
+<div id="content">
+		<div id="link1"></div>
+	  <div id="con1">	
+			<div class="wstepText" style="color:#fcc951; text-shadow:3px 4px 5px #000;"><p> &nbsp &nbsp &nbsp  <b>JavaScript</b> w skrócie <b>JS</b> – skryptowy język programowania, stworzony przez firmę Netscape, najczęściej stosowany na stronach internetowych. Twórcą JavaScriptu jest <b><i>Brendan Eich</b></i>. W połowie lat 90. XX wieku organizacja ECMA wydała na podstawie JavaScriptu standard języka skryptowego o nazwie ECMAScript, aktualnie rozwijaniem tego standardu zajmuje się komisja TC39</p></div>
+				<div><a href="https://pl.wikipedia.org/wiki/JavaScript" target="_blank"><img width="180px" height="180px" style="margin-top:80px;" src="zdj/jslogo.png" alt="Logo Języka"/></div></a>
+				
+				
+	
+			<div style="clear:both;"></div>
+			
+			<div id="script2">
+				&lsaquo; script &rsaquo;
+				&lsaquo; /script &rsaquo;
+			</div>
+			<div style="clear:both;"></div>
+				
+			
+			<div id="calyTutorial">
+				
+				<div class="T1">
+					<p><span style="font-size:40px;">JavaScript może zmienić zawartość HTML</span><br>
+					&nbsp Jedną z wielu metod JavaScript HTML jest <b><i>getElementById();</b></i><br>
+
+					&nbsp Poniższy przykład "znajduje" element HTML (z id=<span style="color:#5ad85a;">"demo"</span>) i zmienia zawartość elementu (innerHTML) na <span style="color:#0000b3;">"Hello JavaScript"</span></p>
+					<span class="przyklad">document.getElementById(<span style="color:#5ad85a;">"demo"</span>).innerHTML = <span style="color:#0000b3;">"Hello JavaScript"</span>;</span>
+				</div>
+				<div style="clear:both;"></div>
+				<hr style="opacity:0.1;">
+				<div class="przyklad">
+				
+					 &lsaquo; p &rsaquo; id=<span style="color:#5ad85a;">"demo"</span> <span style="color:#09c;">style="display:none"</span> &rsaquo; Hello JavaScript! &lsaquo; /p &rsaquo; <br>
+
+					 &lsaquo; button type="button" <span style="color:#600;">onclick="document.getElementById(<span style="color:#5ad85a;">'demo'</span>).<span style="color:#09c;">style.display='block'</span>"</span>&rsaquo; Click Me!<br> &lsaquo; /button &rsaquo;
+			
+				</div>
+				<div style="text-align:center;">
+				<p style="margin:0; padding-top:2px;">result:</p>
+				<p id="demo" style="display:none">Hello JavaScript!</p>
+
+				<button type="button" onclick="document.getElementById('demo').style.display='block'">Click Me!</button></div>
+				<div style="clear:both;"></div>
+				
+			<div class="jsliczy" >
+				<h3>JavaScript umie <br>też liczyć :D</h3>
+				
+				<p style="float:left;">5 + 6 = &nbsp </p><p id="demo1" style="float:left;"></p>
+				
+					<script>
+						document.getElementById("demo1").innerHTML = 5 + 6;
+					</script>
+				
+				
+				
+				
+			</div>
+			
+			<div style="position:relative; left:230px; top:-200px; width:875px; height:50px;">
+			
+				<p class="przyklad" >
+				
+				&lsaquo; p &rsaquo; 5 + 6 = &nbsp &lsaquo; /p &rsaquo; &lsaquo; p id="demo1" &rsaquo; &lsaquo; /p &rsaquo; <br>
+				
+					&lsaquo; script &rsaquo;<br>
+		&nbsp &nbsp &nbsp document.getElementById("demo1").innerHTML = 5 + 6;<br>
+					&lsaquo;/script &rsaquo;<br>
+				
+				<p>
+			
+			</div>
+			<button style="width:250px; height:35px; font-size:25px; font-family: 'Itim', cursive;" onclick="document.getElementById('myImage').src='zdj/worm.png'">Click to wytrzezwiec</button>
+			<img id="myImage" src="zdj/worm.png" style="width:300px">
+			<button style="width:200px; height:35px; font-size:25px; font-family: 'Itim', cursive;" onclick="document.getElementById('myImage').src='zdj/worm2.png'">Click to drink</button>
+			
+			<p>document.getElementById('myImage').src='zdj/worm2.png'</p></div>
+			<hr style="opacity:0.02;">
+			<p><span style="font-size:30px;">Da się również dawać zmiany stylu:</span><br>document.getElementById('demo').style.fontSize='35px'</p>
+			<div style="clear:both;"></div>
+			
+			<hr style="opacity:0.1;">
+			
+			<h2 style="text-shadow:3px 4px 5px #000;">Funkcje i zdarzenia</h2>
+			<h5 style="padding-left:35px;">JavaScript function to blok kodu JavaScript, który może zostać wykonany, gdy zostanie "wywołany".</h5>
+			<img style="margin-left:60px; border-left:5px solid #424757; border-top:5px solid #424757;border-bottom:5px solid #21242c;border-right:5px solid #21242c;" src="zdj/e1.png"/>
+			
+			<hr style="opacity:0.1;">
+			
+			<h2 style="text-shadow:3px 4px 5px #000;"> Możliwości wyświetlania JavaScript </h2>
+			<h5>JavaScript może „wyświetlać” dane na różne sposoby:</h5>
+			<ul type="circle">
+				<li>Zapis do elementu HTML za pomocą <span style="color:#990;">innerHTML</span></li>
+				<li>Pisanie do wyjścia HTML za pomocą <span style="color:#990;">document.write()</span></li>
+				<li>Pisanie w polu alertu za pomocą <span style="color:#990;">window.alert()</span></li>
+				<li>Pisanie do konsoli przeglądarki za pomocą <span style="color:#990;">console.log()</span></li>
+			</ul>
+			<h3 style="text-shadow:3px 4px 5px #000;">Korzystanie z window.alert()</h3>
+			<p style="padding-left:35px;"> np: window.alert("tu wpisujesz co chcesz aby się wyświetliło w okienku")</p>
+			<img style="padding-left:50px;" src="zdj/alert.png"/>
+			
+			
+			
+			
+			<div id="link2"></div>
+			<hr style=" color:fff;">
+			<div style="clear:both;"></div>
+			
+			<h1 style="color:#fcc951;text-shadow:3px 4px 5px #000;font-family: 'Itim', cursive; text-align:center;"><b><i>Składnia</b></i></h1>
+			<h2>EXAMPLE</h2>
+			<p style="padding-left:30px;">let x, y, z; &nbsp   <span style="opacity:0.8;">// Statement 1</span><br>
+			   x = 5;    &nbsp &nbsp  &nbsp  &nbsp   <span style="opacity:0.8;">// Statement 2</span><br>
+			   y = 6;     &nbsp &nbsp &nbsp  &nbsp   <span style="opacity:0.8;">// Statement 3</span><br>
+			   z = x + y;  &nbsp    <span style="opacity:0.8;">// Statement 4</span></p>
+			<hr style="opacity:0.07;">
+			<p>Składnia JS:<br>Wartości, operatory, wyrażenia, słowa kluczowe i komentarze<br> Po wykonaniu każdej instrukcji należy postawić średnik</p>
+			<hr style="opacity:0.1;">
+			<h2 style="text-shadow:3px 4px 5px #000;"> Słowa kluczowe JavaScript</h2>
+			<img src="zdj/slowakluczowe.png"/>
+			<h3 style="font-family: 'Roboto', sans-serif;padding-left:70px; padding-right:70px; color:#fcc951;text-shadow:2px 3px 4px #000;">Słowa kluczowe JavaScript są słowami zastrzeżonymi.<br> Słowa zastrzeżone nie mogą być używane jako nazwy zmiennych.</h3>
+			<hr style="opacity:0.1;">
+			<img style="margin-left:60px; border-left:5px solid #424757; border-top:5px solid #424757;border-bottom:5px solid #21242c;border-right:5px solid #21242c;" src="zdj/howtojss.png"/>
+			<h2 style="text-shadow:3px 4px 5px #000;">Wartości JavaScript</h2>
+			<p>Składnia JavaScript definiuje dwa typy wartości:</p>
+			<ul type="circle" style=""> &nbsp &nbsp <li>Wartości stałe</li>
+			&nbsp &nbsp <li>Wartości zmienne</li></ul>
+			<p>Stałe wartości są nazywane literałami.<br>
+			Wartości zmiennych nazywane są Zmiennymi.</p>
+			<h3 style="text-shadow:3px 4px 5px #000;">Literały JavaScript</h3>
+			<p>1. Liczby są zapisywane z lub bez miejsc dziesiętnych:</p>
+			<p>2. Ciągi to tekst, pisany w cudzysłowie podwójnym lub pojedynczym:</p>
+			
+			
+			<h3 style="text-shadow:3px 4px 5px #000;">Zmienne JavaScript</h3>
+			<p>W języku programowania <span style="text-shadow:3px 4px 5px #000; color:#fcc951;"><b>zmienne</b></span> służą do przechowywania wartości danych.<br>
+
+			JavaScript używa słów kluczowych <span style="text-shadow:3px 4px 5px #000; color:#fcc951;"><i><b>var</b></i></span>, <span style="text-shadow:3px 4px 5px #000; color:#fcc951;"><i><b>let</b></i></span> a <span style="text-shadow:3px 4px 5px #000; color:#fcc951;"><i><b>const</b></i></span> do Declare zmiennych.</br>
+
+			Znak równości służy do przypisywania wartości do zmiennych.<br>
+
+			W tym przykładzie <span style="color:#666;">x</span> jest zdefiniowane jako zmienna. Wtedy <span style="color:#666;">x</span> jest przypisywana (podana) wartość <span style="color:#666;">6</span>:</p>
+			<span style="color:#666;">
+				let x;<br>
+				x = 6;
+			</p></span>
+			<hr style="opacity:0.1;">
+			
+			<h3 style="text-shadow:3px 4px 5px #000;">Wyrażenia JavaScript</h3>
+			
+			<p>Wyrażenie jest kombinacją wartości, zmiennych i operatorów, które obliczają wartość.<br>
+			Obliczenie nazywa się oceną.<br>
+			Na przykład: <span style="color:#666;">5 * 10 daje 50</span>, &nbsp
+			<span style="color:#666;">x * 10</span><br>
+			<span style="color:#5ad85a;">„Jan”</span> + <span style="color:#5ad85a;">„ ”</span> + <span style="color:#5ad85a;">„Kowalski”</span> <span style="color:#5ad85a;">„Jan Kowalski”</span></p>
+			
+			<hr style="opacity:0.1;">
+			<h3 style="text-shadow:3px 4px 5px #000;">Słowa kluczowe JavaScript</h3>
+			<p><b style="text-shadow:3px 4px 5px #000;">Słowa kluczowe</b> JavaScript służą do identyfikacji działań, które należy wykonać.<br>
+			<span style="color:#ff7575;">let</span> / <span style="color:#ff7575;">var</span> Kluczowe informuje przeglądarkę, aby utworzyć zmienne:</p>
+			<p><div id="link3"></div>
+			<span style="color:#ff7575;">let</span> <span style="color:#0c0;">x</span>, <span style="color:#09f;">y</span>;<br>
+			<span style="color:#0c0;">x</span> = 5 + 6;<br>
+			<span style="color:#09f;">y</span> = <span style="color:#0c0;">x</span> * 10;
+			</p>
+			
+			
+			<hr>
+			<h1 style="color:#fcc951;text-shadow:3px 4px 5px #000;font-family: 'Itim', cursive; text-align:center;"><b><i>Zmienne</b></i></h1>
+			<p>
+			Istnieją 3 sposoby zadeklarowania zmiennej JavaScript:
+<ul type="square">
+			<li> <a href="#zmienneVar"> var</li>
+			<li> <a href="#zmienneLet"> let</li>
+			<li> <a href="#zmienneConst"> const</a></li>
+</ul></p>
+<div id="zmienneVar"></div>
+<h1 style="color:#fcc951;text-shadow:3px 4px 5px #000;font-family: 'Itim', cursive;"><b><i>VAR</b></i></h1>
+<p>
+<span style="color:#5ad85a;">var</span> x = 5;<br>
+<span style="color:#5ad85a;">var</span> y = 6;<br>
+<span style="color:#5ad85a;">var</span> z = x + y;<br>
+<br>
+<span style="color:#5ad85a;">var</span> price1 = 5;<br>
+<span style="color:#5ad85a;">var</span> price2 = 6;<br>
+<span style="color:#5ad85a;">var</span> total = price1 + price2;<br>
+</p>
+<h3 style="text-shadow:3px 4px 5px #000;">Ogólne zasady konstruowania nazw zmiennych (unikalnych identyfikatorów) to:</h3>
+<ul type="circle">	
+<li>Nazwy mogą zawierać litery, cyfry, podkreślenia i znaki dolara.</li>
+<li>Imiona muszą zaczynać się na literę</li>
+<li>Nazwy mogą również zaczynać się od $ i _ (ale nie będziemy ich używać w tym samouczku)</li>
+<li>W nazwach rozróżniana jest wielkość liter (y i Y to różne zmienne) </li>
+<li>Zastrzeżone słowa (takie jak słowa kluczowe JavaScript) nie mogą być używane jako nazwy		</li>				
+</ul>		
+<i><p style="text-shadow:2px 3px 4px #000;">W identyfikatorach JavaScript rozróżniana jest wielkość liter.</p></i>
+<hr style="opacity:0.07;">
+<p><span style="color:#fcc951;text-shadow:2px 3px 4px #000;">=</span> jest operatorem <b>„przypisania”</b></p>
+<p><span style="color:#fcc951;text-shadow:2px 3px 4px #000;">==</span> jest operatorem <b>„równa się”</b></p>
+<hr style="opacity:0.07;">
+<p>
+	W poniższym przykładzie tworzymy zmienną o nazwie <b style="text-shadow:2px 3px 4px #000;"><i>carName</i></b> i przypisujemy jej wartość <span style="color:#5ad85a;">„Volvo”</span>.<br/>
+	Następnie "wypisujemy" wartość wewnątrz akapitu HTML z id=<span style="color:#5ad85a;">"demo"</span>:
+</p>
+<img style="border-left:5px solid #424757; border-top:5px solid #424757;border-bottom:5px solid #21242c;border-right:5px solid #21242c;" src="zdj/e2.png"/>
+
+	<hr style="opacity:0.1;">
+
+<div id="zmienneLet"></div>
+<h1 style="color:#fcc951;text-shadow:3px 4px 5px #000;font-family: 'Itim', cursive;"><b><i>LET</b></i></h1>
+<p>	-<span style="color:#5ad85a;"><b> let</b></span> Hasło zostało wprowadzone w ES6 (2015).<br>
+
+	- Zmienne zdefiniowane za <span style="color:#5ad85a;"><b>let</b></span> pomocą nie mogą być ponownie zadeklarowane.<br>
+
+	- Zmienne zdefiniowane za pomocą <span style="color:#5ad85a;"><b>let</b></span> muszą zostać zadeklarowane przed użyciem.<br>
+
+	- Zmienne zdefiniowane za pomocą <span style="color:#5ad85a;"><b>let</b></span> mają zasięg bloku.</p>
+	
+	 
+	<div class="zmienneLV">
+		<p>let - zasięg blokowy</p>
+		<img src="zdj/e3.png" width="450px" class="zdjZmienne"/>
+
+	</div>
+	<div class="zmienneLV">
+		<p>var - zasięg funkcyjny</p>
+		<img src="zdj/e4.png" width="450px" class="zdjZmienne"/>
+
+	</div>
+	<div style="clear:both;"></div>
+	
+				<hr style="opacity:0.1;">
+	
+<div id="zmienneCONST"></div>
+<h1 style="color:#fcc951;text-shadow:3px 4px 5px #000;font-family: 'Itim', cursive;"><b><i>CONST</b></i></h1>
+<p>- <span style="color:#5ad85a;"><b>const</b></span> Hasło zostało wprowadzone w ES6 (2015).<br>
+
+- Zmienne zdefiniowane za <span style="color:#5ad85a;"><b>const</b></span> pomocą nie mogą być ponownie zadeklarowane.<br>
+
+- Zmienne zdefiniowane za <span style="color:#5ad85a;"><b>const</b></span> pomocą nie mogą być ponownie przypisane.<br>
+
+- Zmienne zdefiniowane za pomocą <span style="color:#5ad85a;"><b>const</b></span> mają zasięg bloku.</p><hr style="opacity:0.05;">
+<h3>Kiedy używać stałej JavaScript?</h3>
+<p>Zgodnie z ogólną zasadą, zawsze deklaruj zmienne z, <span style="color:#5ad85a;"><b>const</b></span> chyba że wiesz, że wartość ulegnie zmianie.</p>
+
+<p>Zawsze używaj, constgdy deklarujesz:</p>
+<ul type="circle">
+	<li>Nowa tablica</li>
+	<li>Nowy obiekt</li>
+	<li>Nowa funkcja</li>
+	<li>Nowy RegExp</li>
+</ul>	<hr style="opacity:0.05;">
+<h2>Obiekty stałe i tablice</h2>
+<p>Słowo kluczowe constjest trochę mylące.</br>
+Nie definiuje stałej wartości. Definiuje stałe odniesienie do wartości.</p>
+<p>Z tego powodu NIE możesz:</p>
+<ul type="disc">
+	<li>Przypisz ponownie stałą wartość</li>
+	<li>Ponownie przypisz stałą tablicę</li>
+	<li>Przypisz ponownie stały obiekt</li>
+</ul>
+<p>Ale możesz:</p>
+<ul type="disc">
+	<li>Zmień stałą tablicę</li>
+	<li>Zmień stały obiekt</li>
+</ul><hr style="opacity:0.1;">
+<h2 style="color:#fcc951;text-shadow:3px 4px 5px #000;font-family: 'Itim', cursive;"><b><i>Tablice stałe</b></i></h2>
+<div style="padding-left:30px;">
+<p>Możesz zmienić elementy tablicy stałej:</p>
+<img style="border-left:5px solid #424757; border-top:5px solid #424757;border-bottom:5px solid #21242c;border-right:5px solid #21242c;" src="zdj/5e.png"/>
+<p>Ale NIE możesz zmienić przypisania tablicy:</p>
+<img style="border-left:5px solid #424757; border-top:5px solid #424757;border-bottom:5px solid #21242c;border-right:5px solid #21242c;" src="zdj/e6.png"/></div>
+
+<hr style="opacity:0.1;">
+
+<h2 style="color:#fcc951;text-shadow:3px 4px 5px #000;font-family: 'Itim', cursive;"><b><i>Obiekty stałe</b></i></h2>
+<div style="padding-left:30px;">
+<p>Możesz zmienić właściwości obiektu stałego:</p>
+<img style="border-left:5px solid #424757; border-top:5px solid #424757;border-bottom:5px solid #21242c;border-right:5px solid #21242c;" src="zdj/e7.png"/>
+<p>Ale NIE możesz zmienić przypisania obiektu:</p>
+<img style="border-left:5px solid #424757; border-top:5px solid #424757;border-bottom:5px solid #21242c;border-right:5px solid #21242c;" src="zdj/e8.png"/></div>
+<div id="link4"></div>
+<hr>
+<h1 style="color:#fcc951;text-shadow:3px 4px 5px #000;font-family: 'Itim', cursive; text-align:center;"><b><i>Operatory</b></i></h1>
+<style> td, th { border: 5px solid black; text-align:center; padding:6px;} </style>
+<table>
+   <thead>
+      <tr> <th> Operator <th>Wytłumaczenie
+   <tbody>
+      <tr> <th> +  <th> dodawanie
+      <tr> <th> -  <th> odejmowanie 
+      <tr> <th> *  <th> mnożenie
+      <tr> <th> /  <th> dzielenie
+      <tr> <th> ** <th> Potęgowanie 
+      <tr> <th> %  <th> moduł (pozostały z dywizji)
+      <tr> <th> ++ <th> przyrost 
+      <tr> <th> -- <th> zmniejszenie 
+</table><hr style="opacity:0.05;">
+
+<h2 style="color:#fcc951;text-shadow:2px 3px 4px #000;font-family: 'Itim', cursive;"><b><i>Operatory przypisania JavaScript</b></i></h2>
+<h3>Operatory przypisania przypisują wartości do zmiennych JavaScript.</h3>
+<table>
+   <thead>
+      <tr> <th> Operator <th> Przykład <th> wytłumaczenie (same as)
+   <tbody>
+      <tr> <th> = <th>x=y <th>x=y
+      <tr> <th> +=<th>x+=y <th>x = x + y
+      <tr> <th> -=<th>x -= y <th>x = x - y
+      <tr> <th> *=<th> x *= y<th>	x = x * y
+      <tr> <th> /=<th>x /= y <th>x = x / y
+      <tr> <th> %=<th> 	x %= y<th>	x = x % y
+      <tr> <th> **=<th>	x **= y <th>	x = x ** y
+</table>
+<h4><b>Zadanie dodanie</b> uruchamiający (+=) zwiększa wartość zmiennej.</h4>
+<hr style="opacity:0.1;">
+<p>
+<span style="color:#993399;">let</span> x = <span style="color:#1ab2ff;">5</span> + <span style="color:#1ab2ff;">5</span>;  &nbsp  &nbsp  &nbsp &nbsp  &nbsp <span style="color:#808080;">// 10</span><br>
+<span style="color:#993399;">let</span> y = <span style="color:#5ad85a;">"5"</span> + <span style="color:#1ab2ff;">5</span>;	&nbsp &nbsp &nbsp &nbsp <span style="color:#808080;">// 55</span><br>
+<span style="color:#993399;">let</span> z = <span style="color:#5ad85a;">"Hello"</span> + <span style="color:#1ab2ff;">5</span>; &nbsp	<span style="color:#808080;">//Hello5</span><br>
+</p>
+
+		<hr style="opacity:0.05;">
+<h2 style="color:#fcc951;text-shadow:2px 3px 4px #000;font-family: 'Itim', cursive;"><b><i>Operatory porównania JavaScript</b></i></h2>
+<table>
+   <thead>
+      <tr> <th> Operator <th> Wytłumaczenie
+   <tbody>
+      <tr> <th> == <th> równy
+      <tr> <th> ===<th> jednakowa wartość i taki sam typ 
+      <tr> <th> !=<th> różny od
+      <tr> <th> !==<th> różna wartość lub różny typ 
+      <tr> <th> &lsaquo; <th> większy niż
+      <tr> <th> &rsaquo; <th> mniejszy niż
+      <tr> <th> &lsaquo; = <th> większy lub równy	
+      <tr> <th> &rsaquo; = <th> mniejszy lub równy
+      <tr> <th> ?<th> operator trójskładnikowy 
+      <tr> <th> && <th>  logical and
+      <tr> <th> || <th>  logical or
+      <tr> <th> ! <th> logical not   
+</table><hr style="opacity:0.1;">
+<img src="zdj/oe1.png" style="border:6px solid black; margin-left:45px;"/>
+
+
+
+<div id="link5"></div><hr>
+<h1 style="color:#fcc951;text-shadow:3px 4px 5px #000;font-family: 'Itim', cursive; text-align:center;"><b><i>Arytmetyka</b></i></h1>
+<img src="zdj/resztae.png" style="margin-left:40px; border:6px solid black;"/><hr style="opacity:0.05;">
+<img src="zdj/przyroste.png" style="margin-left:40px; border:6px solid black;"/><hr style="opacity:0.05;">
+<img src="zdj/zmniejszaniee.png" style="margin-left:40px; border:6px solid black;"/><hr style="opacity:0.05;">
+<img src="zdj/potegowaniee.png" style="margin-left:40px; border:6px solid black;"/>
+
+<div id="link5"></div><hr><div id="link6"></div>
+
+<h1 style="color:#fcc951;text-shadow:3px 4px 5px #000;font-family: 'Itim', cursive; text-align:center;"><b><i>Typy danych JavaScript</b></i></h1>
+
+	<img src="zdj/e9.png" style="padding-left:30px;" />
+<h2 style="padding-left:20px;">Pojęcie typów danych</h2>
+<p style="padding-left:40px;">	W programowaniu ważną koncepcją są typy danych.<br>
+	Aby móc operować na zmiennych, ważne jest, aby wiedzieć coś o typie.<br>
+	Bez typów danych komputer nie może bezpiecznie rozwiązać tego problemu:<br>
+	<span style="color:#993399;">let</span> x = <span style="color:#1ab2ff;">16</span> + <span style="color:#5ad85a;">"Volvo"</span>;
+	Czy dodanie „Volvo” do szesnastu ma sens? Czy spowoduje to błąd, czy też wynik?<br>
+	JavaScript potraktuje powyższy przykład jako:<br>
+	<span style="color:#993399;">let</span> x = <span style="color:#5ad85a;">"16"</span> + <span style="color:#5ad85a;">"Volvo"</span>;
+</p>
+<p style="padding-left:100px;">
+<span style="color:#993399;">let</span> x = <span style="color:#1ab2ff;">16</span> + <span style="color:#1ab2ff;">4</span> + <span style="color:#5ad85a;"> "Volvo"</span>; <span style="color:#808080;">&nbsp;&nbsp;&nbsp;//20Volvo</span><br><span style="color:#993399;">let</span> x = <span style="color:#5ad85a;"> "Volvo"</span> + <span style="color:#1ab2ff;">16</span> + <span style="color:#1ab2ff;">4</span>; <span style="color:#808080;">&nbsp;&nbsp;&nbsp;//Volvo164</span>
+</p>
+<hr style="opacity:0.1;">
+<h2>Typy JavaScript są dynamiczne</h2>
+<p style="padding-left:40px; padding-right:40px;">JavaScript ma typy dynamiczne. Oznacza to, że ta sama zmienna może być używana do przechowywania różnych typów danych:</p>
+<img  style="margin-left:60px; border-left:5px solid #424757; border-top:5px solid #424757;border-bottom:5px solid #21242c;border-right:5px solid #21242c;" src="zdj/e10.png"/>
+<hr style="opacity:0.1;">
+<ul type="">
+	<a href="#link9"><li>Ciągi&nbsp;	<span style="color:#808080;">let carName = "Volvo XC60";</span></li></a>
+	<a href="#link10"><li>Liczby&nbsp; <span style="color:#808080;">let x = 34; </span></li></a>
+	<a href="#"><li>Wartości logiczne&nbsp;	<span style="color:#808080;">(6 == 6) - true || (6 == 5) - flase</span></li></a>
+	<a href="#link11"><li>Tablice	&nbsp; <span style="color:#808080;">const cars = ["Saab", "Volvo", "BMW"];</span></li></a>
+	<a href="#obiekty_JS"><li>Obiekty	&nbsp; <span style="color:#808080;">const person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};</span></li></a>
+	<a href="#"><li>Rodzaje operatora&nbsp; <span style="color:#808080;">typeof "John Doe" || typeof 3.14</span></li></a>
+	<a href="#"><li>Nieokreślony &nbsp;	<span style="color:#808080;">car = undefined; </span></li></a>
+	<a href="#"><li>Puste wartości&nbsp;<span style="color:#808080;">let car = ""; </span></li></a>
+</ul>
+
+<div id="link7"></div><hr>
+
+
+<h1 style="color:#fcc951;text-shadow:3px 4px 5px #000;font-family: 'Itim', cursive; text-align:center;"><b><i> Funkcje JavaScript </b></i></h1>
+<a href="#obiekty_JS"><h3 style="text-align:center; color:#fcc951;text-shadow:3px 4px 5px #000;">Obiekty</h3></a>
+<p style="padding-left:30px;">Funkcja JavaScript to blok kodu przeznaczony do wykonania określonego zadania.<br>
+Funkcja JavaScript jest wykonywana, gdy "coś" ją wywołuje (wywołuje to).</p>
+<img style="margin-left:60px; border-left:5px solid #424757; border-top:5px solid #424757;border-bottom:5px solid #21242c;border-right:5px solid #21242c;" src="zdj/e11.png" style="padding-left:60px;"/>
+<hr style="opacity:0.1;">
+<div style="padding-left:40px;">
+<h2>Zmienne lokalne</h2>
+<p style="padding-left:20px;">&nbsp;Zmienne zadeklarowane w funkcji JavaScript stają się <b>LOKALNE</b> dla funkcji.<br>Dostęp do zmiennych lokalnych można uzyskać tylko z poziomu funkcji.</p>
+<p style="padding-left:40px;">
+	<span style="color:#808080;">// code here can NOT use carName</span><br>
+<br>
+	<span style="color:#993399;">function</span> myFunction() {<br>
+	  &nbsp;&nbsp;&nbsp;<span style="color:#993399;">let</span> carName = <span style="color:#5ad85a;">"Volvo"</span>;<br>
+	  &nbsp;&nbsp;&nbsp;<span style="color:#808080;">// code here CAN use carName</span><br>
+	}<br>
+<br>
+	<span style="color:#808080;">// code here can NOT use carName</span>
+	<h4>Zmienne lokalne są tworzone podczas uruchamiania funkcji i usuwane po zakończeniu funkcji.</h4>
+</p></div>
+
+
+<div id="obiekty_JS"></div>
+
+<hr style="opacity:0.5;">
+<h1 style="color:#fcc951;text-shadow:3px 4px 5px #000;font-family: 'Itim', cursive; text-align:center;;"><b><i> Obiekty JavaScript</b></i></h1>
+<h2 style="padding-left:20px;">Przedmioty, właściwości i metody z prawdziwego życia</h2>
+<p style="padding-left:40px;">W rzeczywistości samochód to <b style="color:#fcc951;">przedmiot</b>.<br>Samochód ma <b style="color:#fcc951;">właściwości</b> takie jak waga i kolor oraz <b style="color:#fcc951;">metody</b> takie jak start i stop:</p>
+<img style="padding-left:40px;" src="zdj/e12.png"/>
+<p>Wszystkie samochody mają te same <b style="color:#fcc951;">właściwości</b> , ale <b style="color:#fcc951;">wartości</b style="color:#fcc951;"> właściwości różnią się w zależności od samochodu.<br>Wszystkie samochody mają te same <b style="color:#fcc951;">metody</b> , ale metody są wykonywane <b style="color:#fcc951;">w różnym czasie</b>.</p>
+
+<hr style="opacity:0.1;"><h3><b style="color:#fcc951;padding-left:40px;">Obiekty JavaScript</b></h3>				
+<p style="padding-left:20px;">Wiesz już, że zmienne JavaScript to kontenery na wartości danych.<br>
+Ten kod przypisuje <b style="color:#fcc951;">prostą wartość</b> (Fiat) do <b style="color:#fcc951;">zmiennej o</b> nazwie samochód:</p>
+<p style="padding-left:20px;"><span style="color:#993399;">let</span> car = <span style="color:#5ad85a;">"Fiat"</span>;</p>
+
+<p style="padding-left:20px;">Obiekty też są zmiennymi. Ale obiekty mogą zawierać wiele wartości.<br>
+Ten kod przypisuje <b style="color:#fcc951;">wiele wartości</b> (Fiat, 500, biały) do <b style="color:#fcc951;">zmiennej o</b> nazwie samochód:</p>
+<p style="padding-left:20px;"><span style="color:#993399;">const</span> car = {type:<span style="color:#5ad85a;">"Fiat"</span>, model:<span style="color:#5ad85a;">"500"</span>, color:<span style="color:#5ad85a;">"white"</span>};</p>
+<p>Wartości są zapisywane jako pary <b style="color:#fcc951;">nazwa:wartość</b> (nazwa i wartość oddzielone dwukropkiem).</p>
+<h5 style="padding-left:20px;">Powszechną praktyką jest deklarowanie obiektów za pomocą <span style="color:#993399;">const</span> słowa kluczowego.</h5>
+
+<hr style="opacity:0.1;">
+
+<h3 style="text-align:center;">Dostęp do właściwości obiektu</h3>
+<p style="text-align:center;">Dostęp do właściwości obiektu można uzyskać na dwa sposoby:</p>
+<p style="text-align:center;"><i>objectName.propertyName</i><br>
+lub<br>
+<i>objectName[<span style="color:#5ad85a;">"propertyName"</span>]</i></p>
+<hr style="opacity:0.1;">
+<h2>Przykład:</h2>
+<img src="zdj/e13.png" style="margin-left:60px; border-left:5px solid #424757; border-top:5px solid #424757;border-bottom:5px solid #21242c;border-right:5px solid #21242c;" />
+
+<hr style="opacity:0.6;">
+
+<h1><b style="color:#fcc951;">This</b> słowo kluczowe</h1>
+<p> &nbsp;&nbsp;&nbsp;W definicji funkcji <span style="color:#993399;">this</span> odnosi się do <b style="color:#fcc951;">„właściciela”</b> funkcji.<br>
+&nbsp;W powyższym przykładzie <span style="color:#993399;">this</span> jest to obiekt person</span>, który jest <b style="color:#fcc951;">„właścicielem”</b> <span style="color:#993399;">fullName</span> funkcji.<br>
+&nbsp;Innymi słowy <span style="color:#993399;">this.firstName</span> oznacza <span style="color:#993399;">firstName</span> własność tego obiektu.</p>
+
+
+<h2>Dostęp do metod obiektowych</h2>
+<p>Dostęp do metody obiektu uzyskuje się za pomocą następującej składni:</p>
+<i>objectName.methodName()</i>
+<h3>Przykład:</h3>
+<p>name = person.fullName();</p>
+<h5>Jeśli uzyskasz dostęp do metody bez nawiasów (), zwróci ona definicję funkcji.</h5>				
+<img src="zdj/p1.png" width="1050px" height="700px"/>				
+
+<h1 style="color:red; text-align:center;"><b>Nie deklaruj ciągów, liczb i wartości logicznych jako obiektów!</b></h1>				
+<p>Kiedy zmienna JavaScript jest zadeklarowana ze słowem kluczowym <span style="color:#993399;">„new”</span>, zmienna jest tworzona jako obiekt:</p>				
+
+<p>
+x = <span style="color:#993399;">new</span> String();  &nbsp; &nbsp; &nbsp; &nbsp;      <span style="color:#808080;">// Declares x as a String object</span><br>
+y = <span style="color:#993399;">new</span> Number();  &nbsp; &nbsp; &nbsp;      <span style="color:#808080;"> // Declares y as a Number object</span><br>
+z = <span style="color:#993399;">new</span> Boolean();  &nbsp; &nbsp; &nbsp;     <span style="color:#808080;"> // Declares z as a Boolean object</span><br>
+</p>
+<h5>Unikaj obiektów <span style="color:#993399;">String</span>, <span style="color:#993399;">Number</span>, i <span style="color:#993399;">Boolean</span>. Komplikują one Twój kod i spowalniają szybkość wykonywania.</h5>		
+<hr><div id="link8"></div>	
+
+	<h1 style="color:#fcc951;text-shadow:3px 4px 5px #000;font-family: 'Itim', cursive; text-align:center;;"><b><i>Zdarzenia</b></i></h1>
+	
+	<h2>Typowe zdarzenia HTML</h2>
+	
+	<p>Oto lista niektórych typowych zdarzeń HTML:</p>
+	<table>
+	   <thead>
+		  <tr> <th>Zdarzenia <th>Opis 
+	   <tbody>
+		  <tr> <th>onchange <th>Zmieniono element HTML 
+		  <tr> <th>onclick <th>Użytkownik klika element HTML
+		  <tr> <th>onmouseover <th>żytkownik przesuwa kursor myszy nad elementem HTML
+		  <tr> <th>onmouseout <th>Użytkownik odsuwa mysz od elementu HTML
+		  <tr> <th>onkeydown <th>Użytkownik naciska klawisz klawiatury
+		  <tr> <th>onload <th>Przeglądarka zakończyła ładowanie strony
+	</table>
+	
+	
+<hr><div id="link9"></div>
+
+<h1 style="color:#fcc951;text-shadow:3px 4px 5px #000;font-family: 'Itim', cursive; text-align:center;"><b><i>Ciągi - Strings</b></i></h1>
+<a href="#metodS"><h3 style="color:#fcc951;text-shadow:3px 4px 5px #000; text-align:center;">String Methods</h3></a>
+	
+	
+	<p>Ciąg JavaScript to zero lub więcej znaków zapisanych w cudzysłowie.</p>	
+	<p><b>Przykład</b><br>
+	<span style="color:#993399;">let</span> text = <span style="color:#5ad85a;"> "JavaScribak"</span>;</p><hr style="opacity:0.1;">
+	
+	<h3>String Length</h3>
+	<p>Aby znaleźć długość ciągu, użyj wbudowanej <span style="color:#993399;">length</span> właściwości:</p>
+	<p>	<span style="color:#993399;">let</span> text = <span style="color:#5ad85a;">"ABCDEFGHIJKLMNOPQRSTUVWXYZ"</span>;<br>
+	text.length;    <span style="color:#808080;"> &nbsp;&nbsp;&nbsp; // Will return 26</span></p>
+	<hr style="opacity:0.1;">
+	<p>Aby nie stało się tak:<br>&nbsp;&nbsp;<span style="color:#993399;">let</span> text = <span style="color:#5ad85a;">"We are the so-called "</span>Vikings<span style="color:#5ad85a;">" from the north."</span>;<br>
+	Używamy znaków: <span style="color:#808080;">\'text\'</span> = <span style="color:#5ad85a;">'text'</span>, <span style="color:#808080;">\"text\"</span> = <span style="color:#5ad85a;">"text"</span> lub <span style="color:#808080;">\\text\\</span> = <span style="color:#5ad85a;">\text\</span>:<br>
+	&nbsp;&nbsp;<span style="color:#993399;">let</span> text = <span style="color:#5ad85a;">"We are the so-called \"Vikings\" from the north."</span>;<br>
+	&nbsp;&nbsp;<span style="color:#993399;">let</span> text= <span style="color:#5ad85a;">'It\'s alright.'</span>;<br>
+	&nbsp;&nbsp;<span style="color:#993399;">let</span> text = <span style="color:#5ad85a;">"The character \\ is called backslash."</span>;
+	</p><hr style="opacity:0.1;">
+	
+	<h2 style="text-align:center;">Ciągi mogą być obiektami,<br> <span style="color:red;">ALE ICH NIE DEKLARUJ JAKO OBIEKTY</span></h2>
+	<p>	Normalnie, łańcuchy JavaScript są pierwotnymi wartościami, tworzonymi z literałów:<br>
+	&nbsp;&nbsp;<span style="color:#ff4d4d;">let firstName = "John";</span><br>
+	Ale łańcuchy można również zdefiniować jako obiekty za pomocą słowa kluczowego new:<br>
+	&nbsp;&nbsp;<span style="color:#ff4d4d;">let firstName = new String("John");</span></p>
+	<h3>Przykład</h3>
+	<p>&nbsp;&nbsp;<span style="color:#993399;">let</span> x = <span style="color:#5ad85a;">"John"</span>;<br>
+	&nbsp;&nbsp;<span style="color:#993399;">let</span> y = new String(<span style="color:#5ad85a;">"John"</span>);<br>
+	&nbsp;<span style="color:#808080;">// typeof x will return string</span><br>
+	&nbsp;<span style="color:#808080;">// typeof y will return object</span></p>
+	<hr style="opacity:0.8;"><div id="metodS"></div>
+	<h1 style="color:#fcc951;text-shadow:3px 4px 5px #000;font-family: 'Itim', cursive; text-align:center;"><b><i>String Methods</b></i></h1>
+	<p>Pamiętaj: JavaScript liczy pozycje od zera. Pierwsza pozycja to 0.</p>
+	<p>Wszystkie metody ciągów zwracają nowy ciąg. Nie modyfikują oryginalnego ciągu.</p>
+	<table>
+	   <thead>
+		  <tr> <th>Metoda <th>Opis <th> Przykład
+	   <tbody>
+		  <tr> <th><span style="color:#993399;">length</span> <th>Długość łańcucha  <th> <span style="color:#b3b3b3;"> txt.length </span>
+		  
+		  <tr> <th><span style="color:#993399;">slice(start, end)</span> <th> wyświetla pozycje początkową<br> i końcową (bez końca)<br>(akceptuje liczby ujemne) <th> <span style="color:#b3b3b3;">let str = "Apple, Banana, Kiwi" <br> str.slice(7, 13) // Banana<br>str.slice(7); // Banana, Kiwi<br>str.slice(-12, -6) // Banana</span>
+		  
+		  <tr> <th><span style="color:#993399;">substring(start, end)</span> <th> podobna do slice(),lecz <br>NIE akceptuje liczb ujemnych <th> <span style="color:#b3b3b3;"> str.substring(7,13) //Banana  </span>
+		  
+		  <tr> <th><span style="color:#993399;">substr(start, length)</span> <th>drugi parametr określa<br> długość wyodrębnionej części  <th> <span style="color:#b3b3b3;"> str.substr(7, 6) //Banana<br>str.substr(7) //Banana, Kiwi <br>str.substr(-4) //Kiwi</span>
+		  
+		  <tr> <th><span style="color:#993399;">replace()</span> <th> zastępuje określoną wartość z <br>inną wartość w ciąg znaków <th> <span style="color:#b3b3b3;">let x = "Hello JR!";<br> let newx = x.replace("JR", "JS");<br> zamienia JR na JS:<br> "Hello JS!"  </span>
+		  
+		  <tr> <th><span style="color:#993399;">toUpperCase()</span> <th>Zamienia małe litery na duże  <th> <span style="color:#b3b3b3;"> let text2 = text1.toUpperCase(); </span>
+		  
+		  <tr> <th><span style="color:#993399;">toLowerCase()</span> <th> Zamienia duże litery na małe <th> <span style="color:#b3b3b3;">let text2 = text1.toLowerCase();  </span>
+		  
+		  <tr> <th><span style="color:#993399;">concat()</span> <th>Łączy dwa lub więcej ciągów  <th> <span style="color:#b3b3b3;"> let text1 = "Hello ";<br>let text2 = "World!";<br>let text3 = text1.concat(text2); </span>
+		  
+		  <tr> <th><span style="color:#993399;">trim()</span> <th> usuwa białe znaki po obu<br> stronach ciąg znaków <th> <span style="color:#b3b3b3;">let text = "  Hello World!   ";<br>
+text.trim() //"Hello World!"  </span>
+		  
+		  <tr> <th><span style="color:#993399;">padStart</span> <th> Dopełnienie na początku ciągu <th> <span style="color:#b3b3b3;">let text = "5";<br>text.padStart(4,0) //0005</span>
+		  
+		  <tr> <th><span style="color:#993399;">padEnd</span> <th>Dopełnienie na koncu ciągu  <th> <span style="color:#b3b3b3;">let text = "5";<br>text.padEnd(4,0) //5000 </span>
+		  
+		  <tr> <th><span style="color:#993399;">charAt(position)</span> <th>zwraca znak pod<br> określonym indeksem <th> <span style="color:#b3b3b3;"> let text = "HELLO WORLD";<br>text.charAt(0) // H </span>
+		  
+		  <tr> <th><span style="color:#993399;">charCodeAt(position)</span> <th>zwraca Unicode znaku w<br> określonym indeksem w ciąg<br> znaków kodu UTF-16<br> (liczba całkowita<br> od 0 do 65535)  <th> <span style="color:#b3b3b3;">let text = "HELLO WORLD";<br>text.charCodeAt(0) // 72  </span>
+		  
+		  <tr> <th><span style="color:#993399;">[]</span> <th>  dostęp do właściwości [ ]<br> w ciągach <th> <span style="color:#b3b3b3;"> let text = "HELLO WORLD";<br>text[0] //H  </span>
+		  
+		  <tr> <th colspan="3">WYSZUKIWANIE CIĄGÓW JS
+		  
+		  <tr> <th><span style="color:#993399;">indexOf(" ")</span> <th>Zwraca pozycję pierwszego<br> znalezionego wystąpienia<br> określonego indexu  <th> <span style="color:#b3b3b3;"> let txt = "abcdabcd";<br>let pos = txt.indexOf("d") //3;<br> </span>
+		  
+		  <tr> <th><span style="color:#993399;">lastIndexOf()</span> <th> Zwraca pozycję ostatniego<br> znalezionego wystąpienia<br> określonego indexu nie może<br> brać silne wartości<br> wyszukiwania<br> (wyrażenia regularne)<th> <span style="color:#b3b3b3;">let txt = "abcdabcd";<br>let pos = txt.indexOf("d") //8;</span>
+		  
+		  <tr> <th><span style="color:#993399;">search()</span> <th>wyszukuje ciąg dla określonej<br> wartości i zwraca pozycję,<br> ale nie może zająć drugą<br> pozycję startową argument <th> <span style="color:#b3b3b3;"> let str = "JS czy JR";<br>str.search("czy") //3 </span>
+		  
+		  <tr> <th><span style="color:#993399;">startsWith()</span> <th> str.startsWith<br>(searchvalue, start)  <th> <span style="color:#b3b3b3;">let tx = "Hello world,<br> welcome to the universe.";<br>tx.startsWith("Hello") //true<br>tx.startsWith("world", 6) //true<br>tx.startsWith("world") //flase </span>
+		  
+		  <tr> <th><span style="color:#993399;">endsWith()</span> <th>string.endswith<br>(searchvalue, length)  <th> <span style="color:#b3b3b3;">var text = "John Doe";<br>text.endsWith("Doe")//true<br>text.endsWith("world", 11)//true </span>
+		  
+		  <tr> <th colspan="3"><a href="https://www.w3schools.com/jsref/jsref_obj_string.asp"> &rsaquo; LINK PO WIĘCEJ &lsaquo;</a>
+	</table>
+	
+	<div id="link10"></div><hr>
+	
+	<h1 style="color:#fcc951;text-shadow:3px 4px 5px #000;font-family: 'Itim', cursive; text-align:center;"><b><i>Liczby</b></i></h1>
+<p style="padding-left:40px; padding-right:40px;">JavaScript ma tylko jeden typ liczby. Liczby mogą być zapisywane z lub bez miejsc dziesiętnych.</p>	
+<p style="padding-left:80px;"><span style="color:#993399;">let</span> x = <span style="color:#1ab2ff;">3.14</span>;<br>
+<span style="color:#993399;">let</span> y = <span style="color:#1ab2ff;">3</span>; </p>
+<p style="padding-left:40px; padding-right:40px;">Liczby bardzo duże lub bardzo małe można zapisać w notacji naukowej (wykładniczej)</p>	<hr style="opacity:0.06;">
+<p style="padding-left:80px;"><span style="color:#993399;">let</span> x = <span style="color:#1ab2ff;">123e5</span>;<span style="color:#808080;">&nbsp;&nbsp;// 12300000</span><br>
+<span style="color:#993399;">let</span> y = <span style="color:#1ab2ff;">123e-5</span>;<span style="color:#808080;">&nbsp;&nbsp;// 0.00123</span></p><hr style="opacity:0.1;">
+
+
+	<h3 style="padding-left:40px;padding-right:40px;">Precyzja - Liczby całkowite (liczby bez kropki lub notacji wykładniczej) mają dokładność do 15 cyfr.</h3>
+	
+	<p style="padding-left:20px;padding-right:20px;">Maksymalna liczba miejsc po przecinku to 17, ale arytmetyka zmiennoprzecinkowa <b>NIE</b> zawsze jest dokładna w 100%:</p>
+	
+	<p style="padding-left:30px;"><span style="color:#993399;">let</span> x = <span style="color:#1ab2ff;">0.2</span> + <span style="color:#1ab2ff;">0.1</span>; &nbsp;&nbsp;&nbsp;  <span style="color:#808080;">// x will be 0.30000000000000004</span></p>
+	
+	<p style="padding-left:20px;padding-right:20px;">Aby rozwiązać powyższy problem, warto mnożyć i dzielić:</p>
+	
+	<p style="padding-left:30px;"><span style="color:#993399;">let</span> x = (<span style="color:#1ab2ff;">0.2</span> * <span style="color:#1ab2ff;">10</span> + <span style="color:#1ab2ff;">0.1</span> * <span style="color:#1ab2ff;">10</span>) / <span style="color:#1ab2ff;">10</span>; &nbsp;&nbsp;&nbsp;      <span style="color:#808080;">// x will be 0.3</span></p>
+	
+	
+	<hr style="opacity:0.1;">
+	
+	
+	<h2 style="color:#fcc951;text-shadow:3px 4px 5px #000;font-family: 'Itim', cursive; text-align:center;"><b><i>Dodawanie liczb i ciągów</b></i></h2>
+	
+	<div style="margin-left:80px; background-color:#ff4d4d; padding-left:5px; margin-right:180px; ">
+	<p><b><i>OSTRZEŻENIE!!</i><br>JavaScript używa operatora <span style="color:#000;">+</span> zarówno do dodawania, jak i łączenia.<br>	Numery są dodawane. Ciągi są łączone.</b></p></div>
+	
+	
+	<p>Dodawanie dwóch liczb:</p>
+	<p><span style="color:#993399;">let</span> x = <span style="color:#1ab2ff;">10</span>;<br>
+<span style="color:#993399;">let</span> y = <span style="color:#1ab2ff;">20</span>;<br>
+<span style="color:#993399;">let</span> z = x + y;  &nbsp;&nbsp;&nbsp;&nbsp; <span style="color:#808080;"> // z will be 30 (a number)</span></p><hr style="opacity:0.04;">
+
+	<p>Jeśli dodasz dwa ciągi, wynikiem będzie konkatenacja ciągów:</p>
+	<p>
+<span style="color:#993399;">let</span> x = <span style="color:#5ad85a;">"10"</span>;<br>
+<span style="color:#993399;">let</span> y = <span style="color:#5ad85a;">"20"</span>;<br>
+<span style="color:#993399;">let</span> z = x + y;  &nbsp;&nbsp;&nbsp;&nbsp;   <span style="color:#808080;"> // z will be 1020 (a string)</span></p><hr style="opacity:0.04;">
+
+	<p>Jeśli dodasz liczbę i ciąg, wynikiem będzie konkatenacja ciągu:</p>
+<p>
+<span style="color:#993399;">let</span> x = <span style="color:#1ab2ff;">10</span>;<br>
+<span style="color:#993399;">let</span> y = <span style="color:#5ad85a;">"20"</span>;<br>
+<span style="color:#993399;">let</span> z = x + y; &nbsp;&nbsp;&nbsp;&nbsp;    <span style="color:#808080;">// z will be 1020 (a string)</span></p><hr style="opacity:0.04;">
+
+	<p>Jeśli dodasz ciąg i liczbę, wynikiem będzie konkatenacja ciągu:</p>
+	<p>
+<span style="color:#993399;">let</span> x = <span style="color:#5ad85a;">"10"</span>;<br>
+<span style="color:#993399;">let</span> y = <span style="color:#1ab2ff;">20</span>;<br>
+<span style="color:#993399;">let</span> z = x + y; &nbsp;&nbsp;&nbsp;&nbsp;   <span style="color:#808080;">  // z will be 1020 (a string)</span></p><hr style="opacity:0.04;">
+
+	<p>Częstym błędem jest oczekiwanie, że wynik ten wyniesie 30:</p>
+	<p>
+<span style="color:#993399;">let</span> x = <span style="color:#1ab2ff;">10</span>;<br>
+<span style="color:#993399;">let</span> y = <span style="color:#1ab2ff;">20</span>;<br>
+<span style="color:#993399;">let</span> z = <span style="color:#5ad85a;">"The result is: "</span> + x + y; 	&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:#808080;">//The result is: 1020</span></p><hr style="opacity:0.04;">
+	
+	<p>Częstym błędem jest oczekiwanie, że ten wynik będzie 102030:</p>	
+	<p>
+<span style="color:#993399;">let</span> x = <span style="color:#1ab2ff;">10</span>;<br>
+<span style="color:#993399;">let</span> y = <span style="color:#1ab2ff;">20</span>;<br>
+<span style="color:#993399;">let</span> z = <span style="color:#5ad85a;">"30"</span>;<br>
+<span style="color:#993399;">let</span> result = x + y + z;	&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:#808080;">//3030</span></p><hr style="opacity:0.3;">
+
+<p style="color:#ff4d4d;text-shadow:3px 4px 5px #000;">Interpreter JavaScript działa od lewej do prawej.<br>
+Pierwsze 10 + 20 jest dodawane, ponieważ x i y są liczbami.<br>
+Następnie łączy się 30 + „30”, ponieważ z jest łańcuchem.</p><hr style="opacity:0.3;">
+				
+				
+	<h2 style="color:#fcc951;text-shadow:3px 4px 5px #000;font-family: 'Itim', cursive; text-align:center;">Ciągi numeryczne</h2>
+	
+	<p>Ciągi JavaScript mogą mieć zawartość liczbową:</p>
+	<p>
+<span style="color:#993399;">let</span> x = <span style="color:#1ab2ff;">100</span>;     &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; <span style="color:#808080;">   // x is a number</span><br>
+<span style="color:#993399;">let</span> y = <span style="color:#5ad85a;">"100"</span>;    &nbsp;&nbsp;&nbsp;&nbsp;  <span style="color:#808080;"> // y is a string</span></p>
+
+
+	<p>JavaScript spróbuje przekonwertować ciągi na liczby we wszystkich operacjach numerycznych:<br>
+To zadziała:</p>
+<p><span style="color:#993399;">let</span> x = <span style="color:#5ad85a;">"100"</span>;<br>
+<span style="color:#993399;">let</span> y = <span style="color:#5ad85a;">"10"</span>;<br>
+<span style="color:#993399;">let</span> z = x <span style="color:#ff4d4d;">/</span> y;  &nbsp;&nbsp;&nbsp;&nbsp;    <span style="color:#808080;"> // z will be 10</span><br>
+<span style="color:#993399;">let</span> z = x <span style="color:#ff4d4d;">*</span> y; &nbsp;&nbsp;&nbsp;&nbsp;     <span style="color:#808080;"> // z will be 1000</span><br>
+<span style="color:#993399;">let</span> z = x <span style="color:#ff4d4d;">-</span> y;  &nbsp;&nbsp;&nbsp;&nbsp;     <span style="color:#808080;">// z will be 90</span><br>
+<span style="color:#993399;">let</span> z = x <span style="color:#ff4d4d;">+</span> y; &nbsp;&nbsp;&nbsp;&nbsp;      <span style="color:#808080;">// z will not be 110 (It will be 10010)</span>
+</p><hr style="opacity:0.3;">
+
+
+<h2 style="color:#fcc951;text-shadow:3px 4px 5px #000;font-family: 'Itim', cursive; text-align:center;">NaN - To nie jest liczba</h2>
+<p><span style="color:#ff4d4d;"><b>NaN</b></span> jest słowem zastrzeżonym JavaScript wskazującym, że liczba nie jest liczbą legalną.<br>
+Próba wykonania arytmetyki z ciągiem nienumerycznym da wynik <span style="color:#ff4d4d;"><b>NaN</b></span> <i>(Not a Number)</i>:</p><hr style="opacity:0.1;">
+<p>
+<span style="color:#993399;">let</span> x = <span style="color:#1ab2ff;">100</span> / <span style="color:#5ad85a;">"Apple"</span>; &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#808080;">  // x will be NaN <i>(Not a Number)</span></i><br>
+<span style="color:#993399;">let</span> x = <span style="color:#1ab2ff;">100</span> / <span style="color:#5ad85a;">"10"</span>;   &nbsp;&nbsp;&nbsp;&nbsp; <span style="color:#808080;">  // x will be 10</span></p><hr style="opacity:0.1;">
+
+<p>Możesz użyć globalnej funkcji JavaScript, <span style="color:#ff4d4d;">isNaN()</span> aby dowiedzieć się, czy wartość jest liczbą</p><p>
+<span style="color:#993399;">let</span> x = <span style="color:#1ab2ff;">100</span> / <span style="color:#5ad85a;">"Apple"</span>;<br>
+<span style="color:#993399;">isNaN(x)</span>;           &nbsp;&nbsp;&nbsp;&nbsp;  <span style="color:#808080;">   // returns true because x is Not a Number</span></p><hr style="opacity:0.1;">
+
+<p>Uważaj na <span style="color:#ff4d4d;">NaN</span>. Jeśli użyjesz <span style="color:#ff4d4d;">NaN</span> w operacji matematycznej, wynikiem będzie również <span style="color:#ff4d4d;">NaN</span>:</p><p>
+<span style="color:#993399;">let</span> x = <span style="color:#993399;">NaN</span>;<br>
+<span style="color:#993399;">let </span>y = <span style="color:#1ab2ff;">5</span>;<br>
+<span style="color:#993399;">let</span> z = x + y;       &nbsp;&nbsp;&nbsp;&nbsp; <span style="color:#808080;">  // z will be NaN</span></p><hr style="opacity:0.1;">
+
+<p><span style="color:#993399;">let</span> x = <span style="color:#993399;">NaN</span>;<br>
+<span style="color:#993399;">let</span> y = <span style="color:#5ad85a;">"5"</span>;<br>
+<span style="color:#993399;">let</span> z = x + y;      &nbsp;&nbsp;&nbsp;&nbsp; <span style="color:#808080;">   // z will be NaN5</span></p><hr style="opacity:0.1;">
+
+<p><span style="color:#ff4d4d;">NaN</span> to liczba: <span style="color:#ff4d4d;">typeof NaN</span> zwraca <span style="color:#ff4d4d;">number</span>:<br>
+<span style="color:#993399;">typeof NaN</span>;         &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#808080;">    // returns "number"</span></p> <hr style="opacity:0.3;">
+
+<h2 style="color:#fcc951;text-shadow:3px 4px 5px #000;font-family: 'Itim', cursive; text-align:center;">Nieskończoność</h2>
+<p style="padding-left:20px;padding-right:20px;" ><span style="color:#ff4d4d;">Infinity</span>(lub <span style="color:#ff4d4d;">-Infinity</span>) to wartość zwrócona przez JavaScript, jeśli obliczysz liczbę poza największą możliwą liczbą.</p>
+		<h3>Przykład:</h3>
+		<img style="margin-left:60px; border-left:5px solid #424757; border-top:5px solid #424757;border-bottom:5px solid #21242c;border-right:5px solid #21242c;" src="zdj/e14.png"/>	
+
+		<p>Dzielenie przez 0 (zero) generuje również <span style="color:#ff4d4d;">Infinity</span>:</p>
+		<img style="margin-left:60px; border-left:5px solid #424757; border-top:5px solid #424757;border-bottom:5px solid #21242c;border-right:5px solid #21242c;" src="zdj/e15.png"/>	
+		
+		<p><span style="color:#ff4d4d;">Infinity</span> to liczba: <span style="color:#ff4d4d;">typeof Infinity</span> zwraca<span style="color:#ff4d4d;"> number</span>.</p>
+		<img style="margin-left:60px; border-left:5px solid #424757; border-top:5px solid #424757;border-bottom:5px solid #21242c;border-right:5px solid #21242c;" src="zdj/e16.png"/>
+		
+		<hr style="opacity:0.3;">	
+
+		<h2 style="color:#fcc951;text-shadow:3px 4px 5px #000;font-family: 'Itim', cursive; text-align:center;">Szesnastkowy</h2>
+		<p>JavaScript interpretuje stałe numeryczne jako szesnastkowe, jeśli są poprzedzone 0x.</p>
+		<img style="margin-left:60px; border-left:5px solid #424757; border-top:5px solid #424757;border-bottom:5px solid #21242c;border-right:5px solid #21242c;" src="zdj/e17.png"/><div id="toString"></div><hr style="opacity:0.3;">
+
+<p style="padding-left:30px; padding-right:30px;">
+&nbsp;&nbsp;&nbsp;Nigdy nie pisz liczby z wiodącym zerem (np. 07).<br>
+Niektóre wersje JavaScriptu interpretują liczby jako ósemkowe, jeśli są napisane z wiodącym zerem.<br>
+<br>
+&nbsp;&nbsp;Domyślnie JavaScript wyświetla liczby jako <b>10</b> miejsc po przecinku.<br>
+Ale możesz użyć tej <span style="color:#ff4d4d;">toString()</span> metody, aby wyprowadzić liczby od <b>podstawy 2</b> do <b>podstawy 36.</b><br>
+Szesnastkowy ma <b>podstawę 16</b>. Dziesiętny to <b>podstawa 10</b>. Liczba ósemkowa to <b>podstawa 8</b>. Binarny to<b> baza 2</b>.</p>
+
+		<img src="zdj/e18.png" style="margin-left:60px; border-left:5px solid #424757; border-top:5px solid #424757;border-bottom:5px solid #21242c;border-right:5px solid #21242c;"/><hr style="opacity:0.3;">
+		<h2 style="color:#fcc951;text-shadow:3px 4px 5px #000;font-family: 'Itim', cursive; text-align:center;">Liczby mogą być obiektami</h2>
+		<p style="padding-left:30px; padding-right:30px;">Normalnie liczby JavaScript są prymitywnymi wartościami utworzonymi z literałów:<br><span style="color:#ff4d4d;">let x = 123;</span><br>Ale liczby można również zdefiniować jako obiekty za pomocą słowa kluczowego<span style="color:#ff4d4d;"> new</span>:<br><span style="color:#ff4d4d;">let y = new Number(123);</span></p>
+		
+		<img src="zdj/e19.png" style="margin-left:60px; border-left:5px solid #424757; border-top:5px solid #424757;border-bottom:5px solid #21242c;border-right:5px solid #21242c;"/>
+		
+		<h3 style="text-align:center;">Nie twórz obiektów Number. Spowalnia szybkość wykonywania.<br>Słowo <span style="color:#ff4d4d;">new</span> kluczowe komplikuje kod. Może to spowodować nieoczekiwane wyniki:</h3>
+		
+		<p>Używając <span style="color:#ff4d4d;">==</span> operatora, równe liczby są równe:</p>
+		
+		<img src="zdj/e20.png" style="margin-left:60px; border-left:5px solid #424757; border-top:5px solid #424757;border-bottom:5px solid #21242c;border-right:5px solid #21242c;"/>
+		
+		<p>Podczas korzystania z <span style="color:#ff4d4d;">===</span> operatora równe liczby nie są równe, ponieważ <span style="color:#ff4d4d;">===</span> operator oczekuje równości zarówno pod względem typu, jak i wartości.</p>
+		
+		<img src="zdj/e21.png" style="margin-left:60px; border-left:5px solid #424757; border-top:5px solid #424757;border-bottom:5px solid #21242c;border-right:5px solid #21242c;"/>
+		
+		<p>Albo jeszcze gorzej. Obiekty <b><i>NIE</i></b> mogą być porównywane:</p>
+		
+		<img src="zdj/e22.png" style="margin-left:60px; border-left:5px solid #424757; border-top:5px solid #424757;border-bottom:5px solid #21242c;border-right:5px solid #21242c;"/>
+		
+		<h2 style="text-align:center;">Zwróć uwagę na różnicę między <span style="color:#ff4d4d;">(x==y)</span> a <span style="color:#ff4d4d;">(x===y)</span>.<br>Porównanie dwóch obiektów JavaScript zawsze zwróci <span style="color:#ff4d4d;">false</span>.</h2>
+		
+		
+		<hr style="opacity:0.3;">
+		<table>
+		 <thead>
+		  <tr> <th>Metoda <th>Opis <th> Przykład
+	   <tbody>
+		  <tr> <th><span style="color:#993399;">toString()</span> <th>zwraca liczbę jako ciąg znaków  <th><img style="margin-left:60px; border-left:5px solid #424757; border-top:5px solid #424757;border-bottom:5px solid #21242c;border-right:5px solid #21242c;"src="zdj/ML1.png"/>
+		  
+		  <tr> <th><span style="color:#993399;">toExponential()</span> <th>zwraca łańcuch, z liczbą zaokrągloną i zapisaną w notacji wykładniczej. Parametr określa liczbę znaków po przecinku<th><img style="margin-left:60px; border-left:5px solid #424757; border-top:5px solid #424757;border-bottom:5px solid #21242c;border-right:5px solid #21242c;"src="zdj/ml2.png"/>
+		  
+		  <tr> <th><span style="color:#993399;">toFixed()</span> <th>zwraca ciąg, z liczbą zapisaną z określoną liczbą miejsc po przecinku<th><img style="margin-left:60px; border-left:5px solid #424757; border-top:5px solid #424757;border-bottom:5px solid #21242c;border-right:5px solid #21242c;"src="zdj/ml3.png"/>
+		  
+		  <tr> <th><span style="color:#993399;">toPrecision()</span> <th>zwraca ciąg, z liczbą zapisaną o określonej długości<th><img style="margin-left:60px; border-left:5px solid #424757; border-top:5px solid #424757;border-bottom:5px solid #21242c;border-right:5px solid #21242c;"src="zdj/ml4.png"/>
+		  
+		  <tr> <th><span style="color:#993399;">valueOf()</span> <th>zwraca liczbę jako liczbę.<th><img style="margin-left:60px; border-left:5px solid #424757; border-top:5px solid #424757;border-bottom:5px solid #21242c;border-right:5px solid #21242c;"src="zdj/ml5.png"/>
+		  
+		  <tr> <th><span style="color:#993399;">Number()</span> <th>może służyć do konwersji zmiennych JavaScript na liczby<th><img style="margin-left:60px; border-left:5px solid #424757; border-top:5px solid #424757;border-bottom:5px solid #21242c;border-right:5px solid #21242c;"src="zdj/ml6.png"/> <img style="margin-left:60px; border-left:5px solid #424757; border-top:5px solid #424757;border-bottom:5px solid #21242c;border-right:5px solid #21242c;"src="zdj/ml7.png"/> 
+		  
+		  <tr> <th><span style="color:#993399;">parseInt()</span> <th>analizuje ciąg i zwraca liczbę całkowitą. Spacje są dozwolone. Zwracany jest tylko pierwszy numer<th><img style="margin-left:60px; border-left:5px solid #424757; border-top:5px solid #424757;border-bottom:5px solid #21242c;border-right:5px solid #21242c;"src="zdj/ml8.png"/>
+		  
+		  <tr> <th><span style="color:#993399;">parseFloat()</span> <th>analizuje ciąg i zwraca liczbę. Spacje są dozwolone. Zwracany jest tylko pierwszy numer<th><img style="margin-left:60px; border-left:5px solid #424757; border-top:5px solid #424757;border-bottom:5px solid #21242c;border-right:5px solid #21242c;"src="zdj/ml9.png"/>
+		  
+		  <tr> <th><span style="color:#993399;">MAX_VALUE</span> <th> zwraca największą możliwą liczbę w JavaScript.<th><img style="margin-left:60px; border-left:5px solid #424757; border-top:5px solid #424757;border-bottom:5px solid #21242c;border-right:5px solid #21242c;"src="zdj/ml10.png"/> 
+		  
+		  <tr> <th><span style="color:#993399;">MIN_VALUE</span> <th>zwraca najniższą możliwą liczbę w JavaScript<th><img style="margin-left:60px; border-left:5px solid #424757; border-top:5px solid #424757;border-bottom:5px solid #21242c;border-right:5px solid #21242c;"src="zdj/ml11.png"/>
+		   
+		  <tr> <th colspan="3"><a href="https://www.w3schools.com/jsref/jsref_obj_number.asp"> &rsaquo; LINK PO WIĘCEJ &lsaquo;</a>	  
+		</table>
+		
+		<div id="link11"></div><hr>
+		<h1 style="color:#fcc951;text-shadow:3px 4px 5px #000;font-family: 'Itim', cursive; text-align:center;"><b><i>Tablice</b></i></h1>
+		
+<p>Tablice JavaScript służą do przechowywania wielu wartości w jednej zmiennej.</p>
+<img style="margin-left:60px; border-left:5px solid #424757; border-top:5px solid #424757;border-bottom:5px solid #21242c;border-right:5px solid #21242c;"src="zdj/e23.png"/>
+<hr style="opacity:0.1;">				
+	
+<h2>Co to jest tablica?</h2>	
+<p>Tablica to specjalna zmienna, która może jednocześnie przechowywać więcej niż jedną wartość.<br>
+Jeśli masz listę elementów (na przykład listę nazw samochodów), przechowywanie samochodów w pojedynczych zmiennych może wyglądać tak:</p>
+<img style="margin-left:60px; border-left:5px solid #424757; border-top:5px solid #424757;border-bottom:5px solid #21242c;border-right:5px solid #21242c;"src="zdj/e24.png"/>
+<p>Co jednak zrobić, jeśli chcesz zapętlić samochody i znaleźć konkretny? A co by było, gdybyś nie miał 3 samochodów, ale 300?<br>
+Rozwiązaniem jest tablica!<br>Tablica może zawierać wiele wartości pod jedną nazwą, a dostęp do wartości można uzyskać, odwołując się do numeru indeksu.</p>	<hr style="opacity:0.1;">			
+		
+<h2>Tworzenie tablicy</h2>		
+<p>Użycie literału tablicowego to najprostszy sposób na utworzenie tablicy JavaScript.<br>Składnia:</p>
+<img style="margin-left:60px; border-left:5px solid #424757; border-top:5px solid #424757;border-bottom:5px solid #21242c;border-right:5px solid #21242c;"src="zdj/e25.png"/>
+<hr style="opacity:0.1;">					
+				
+<h3>Przykład:</h3>
+<img style="margin-left:60px; border-left:5px solid #424757; border-top:5px solid #424757;border-bottom:5px solid #21242c;border-right:5px solid #21242c;"src="zdj/e26.png"/>
+<p>Spacje i łamanie wierszy nie są ważne. Deklaracja może obejmować wiele wierszy:</p>
+<img style="margin-left:60px; border-left:5px solid #424757; border-top:5px solid #424757;border-bottom:5px solid #21242c;border-right:5px solid #21242c;"src="zdj/e27.png"/>
+<p>Możesz również utworzyć tablicę, a następnie podać elementy:</p>
+<img style="margin-left:60px; border-left:5px solid #424757; border-top:5px solid #424757;border-bottom:5px solid #21242c;border-right:5px solid #21242c;"src="zdj/e28.png"/><hr style="opacity:0.2;">
+
+<h2>Using the JavaScript Keyword new</h2>	
+<p>Poniższy przykład tworzy również tablicę i przypisuje do niej wartości:</p>
+<img style="margin-left:60px; border-left:5px solid #424757; border-top:5px solid #424757;border-bottom:5px solid #21242c;border-right:5px solid #21242c;"src="zdj/e29.png"/>
+<p>Dwa powyższe przykłady robią dokładnie to samo.<br>
+
+Nie ma potrzeby używania <span style="color:#ff4d4d;"><i>new Array()</i></span>.<br>
+Dla uproszczenia, czytelności i szybkości wykonania użyj pierwszego (metody literału tablicowego).</p>	<hr style="opacity:0.2;">			
+			
+<h2>Dostęp do elementów tablicy</h2>
+<p>Dostęp do elementu tablicy można uzyskać, odwołując się do <b>numeru indeksu</b>:</p>
+<img style="margin-left:60px; border-left:5px solid #424757; border-top:5px solid #424757;border-bottom:5px solid #21242c;border-right:5px solid #21242c;"src="zdj/e30.png"/>
+
+
+<hr style="opacity:0.1;">	
+
+<h2>Zmiana elementu tablicy</h2>
+<p>To stwierdzenie zmienia wartość pierwszego elementu w <span style="color:#ff4d4d;">cars</span>:</p>
+<img style="margin-left:60px; border-left:5px solid #424757; border-top:5px solid #424757;border-bottom:5px solid #21242c;border-right:5px solid #21242c;"src="zdj/32.png"/><hr style="opacity:0.1;">
+
+<h2>Access the Full Array - Uzyskaj dostęp do pełnej tablicy</h2>
+<img style="margin-left:60px; border-left:5px solid #424757; border-top:5px solid #424757;border-bottom:5px solid #21242c;border-right:5px solid #21242c;"src="zdj/e32.png"/><hr style="opacity:0.1;">
+
+<h2>Tablice są obiektami</h2>
+<p>Tablice to specjalny typ obiektów. typeofOperator w JavaScripcie zwraca „obiekt” na tablicach.<br>
+Ale tablice JavaScript najlepiej opisać jako tablice.<br>
+Tablice używają <b><i>liczb</i></b>, aby uzyskać dostęp do swoich „elementów”. W tym przykładzie person[0]<> zwraca John:</p><h2>Tablica:</h2>
+<img style="margin-left:60px; border-left:5px solid #424757; border-top:5px solid #424757;border-bottom:5px solid #21242c;border-right:5px solid #21242c;"src="zdj/e33.png"/>
+<p>Obiekty używają <b>nazw</b>, aby uzyskać dostęp do swoich „członków”. W tym przykładzie <span style="color:#ff4d4d;">person.firstName</span> zwraca John:</p>
+<img style="margin-left:60px; border-left:5px solid #424757; border-top:5px solid #424757;border-bottom:5px solid #21242c;border-right:5px solid #21242c;"src="zdj/e34.png"/><hr style="opacity:0.1;">
+
+<h2>Elementy tablicy mogą być obiektami</h2>
+<p>Zmienne JavaScript mogą być obiektami. Tablice to specjalne rodzaje obiektów.<br>
+Z tego powodu w tej samej tablicy można mieć zmienne różnych typów.<br>
+Możesz mieć obiekty w tablicy. Możesz mieć funkcje w tablicy. Możesz mieć tablice w tablicy:</p>
+<img style="margin-left:60px; border-left:5px solid #424757; border-top:5px solid #424757;border-bottom:5px solid #21242c;border-right:5px solid #21242c;"src="zdj/e35.png"/>
+<h2>Właściwości i metody tablicy</h2>
+<p>Prawdziwą siłą tablic JavaScript są wbudowane właściwości i metody tablic:</p>
+<img style="margin-left:60px; border-left:5px solid #424757; border-top:5px solid #424757;border-bottom:5px solid #21242c;border-right:5px solid #21242c;"src="zdj/e36.png"/><hr style="opacity:0.1;">
+
+
+
+			
+<p></p>
+<img style="margin-left:60px; border-left:5px solid #424757; border-top:5px solid #424757;border-bottom:5px solid #21242c;border-right:5px solid #21242c;"src="zdj/e.png"/>
+<hr style="opacity:0.1;">					
+				
+				
+				
+				
+				
+				
+				
+				
+			
+				
+				
+			</div>
+			
+			
+			
+			
+	  </div>
+			
+  <div id="con3"></div>	
+			
+	  <div id="con2">
+			<ul type="disc">
+				<li><a href="#link1">Wprowadzenie</a></li>
+				<li><a href="#link2">Składnia</a></li>
+				<li><a href="#link3">Zmienne</a></li>
+				<li><a href="#link4">Operatory</a></li>
+				<li><a href="#link5">Arytmetyka</a></li>
+				<li><a href="#link6">Typy danych</a></li>
+				<li><a href="#link7">Funkcje / Obiekty</a></li>
+				<li><a href="#link8">Zdarzenia</a></li>
+				<li><a href="#link9">Ciągi - Strings</a></li>
+				<li><a href="#link10">Liczby</a></li>
+				<li><a href="#link11">Tablice</a></li>
+				<li><a href="#link12"></a></li>
+				<li><a href="#link13"></a></li>
+				<li><a href="#link14"></a></li>
+				<li><a href="#link15"></a></li>
+				<li><a href="#link16"></a></li>
+				<li><a href="#link17"></a></li>
+				<li><a href="#link18"></a></li>
+				<li><a href="#link19"></a></li>
+				<li><a href="#link20"></a></li>
+				<li><a href="#link21"></a></li>
+				<li><a href="#link22"></a></li>
+				<li><a href="#link23"></a></li>
+				<li><a href="#link24"></a></li>
+				<li><a href="#link25"></a></li>
+				<li><a href="#link26"></a></li>
+				<li><a href="#link27"></a></li>
+				<li><a href="#link28"></a></li>
+				<li><a href="#link29"></a></li>
+				<li><a href="#link30"></a></li>
+			
+			</ul>	
+			
+	  </div>
+	  <div style="clear:both;"></div>
+</div>
+						
+</div>
+		
+		
+		<div id="footer">
+			<div id="stopka1">
+				<p>"Nie porównuj siebie do innych - jedyną osobą, od której powinieneś/aś być lepszy/a jesteś ty sam z wczoraj"</p>
+				<p>"W każdym minusie szukaj plusa"</p>
+				<p>"It is so simple, just learn to jump"</p>
+				</div>
+			<div id="stopka2">
+			
+				<div class="block"><div class="overlay">
+				<img src="zdj/dc.png"/>
+					<a class="link" href="#"><p>JavaRobak</p>
+				</div></div>
+				
+				<div class="block"><a href="https://www.youtube.com/channel/UCpY4lfL138DaMJYGJkbtfVA" target="_blank"><i class="icon-youtube-play"></a></i></div>
+				
+				<div class="block"><a href="https://pl.pinterest.com/" target="_blank"><i class="icon-pinterest" ></i></a></div>
+				
+				<div class="block"><img src="zdj/RmojeLogo.png"/></div>
+			</div>	
+			
+			<div style="clear:both;"></div>
+			
+		</div>	
+  </body>
+
+</html>

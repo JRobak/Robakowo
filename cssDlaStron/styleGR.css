@@ -1,0 +1,81 @@
+/*CZCIONKI
+	font-family: 'Patrick Hand', cursive;
+	font-family: 'Tomorrow', sans-serif;
+	font-family: 'Balsamiq Sans', cursive;
+	font-family: 'Itim', cursive;
+	font-family: 'Noto Sans JP', sans-serif;
+	font-family: 'Roboto', sans-serif;
+*/
+
+body{
+
+	font-size:25px;
+	font-family:'Balsamiq Sans', cursive;	
+/*	line-height:12px;*/
+}
+
+
+
+#title{
+	font-size:40px;
+	font-family: 'Itim', cursive;
+	text-align:center;
+	color:white;
+	border-radius:50px;
+	background-color:black;
+	margin-left:auto;
+	margin-right:auto;
+	margin:0 20px;
+	animation:animation1 10s infinite;
+}
+@keyframes animation1{
+  0%   {background-color:#808080;}
+  50%   {background-color:#000;}
+  100% {background-color:#808080;}
+}
+
+.pasekBoczny{
+	float:left;
+	width:4%;	
+	height:100%;
+	writing-mode:vertical-rl;
+	font-size:60px;
+	position:absolute;
+}
+
+#contener{
+	overflow: auto;
+	margin-left:auto;
+	margin-right:auto;
+	width:100%;
+	height:auto;
+	margin:20px auto;
+	
+}
+#wstep{
+	margin-left:2%;
+	margin-right:6%;
+}
+#wstep > p{
+	margin:0 20px;
+	text-align:justify;
+	color:#fcc951;
+	text-shadow:3px 4px 5px #000;
+	font-size:30px;
+	text-indent:35px;
+	float:left;
+	width:75%;
+}
+/*---------STRZALKI----------*/
+
+.icon-forward{
+	font-size:30px;
+}
+
+.icon-reply{
+	transition: rotate(-90deg);
+}
+
+/*---------STRZALKI----------*/
+
+
